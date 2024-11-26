@@ -16,8 +16,11 @@
 # d
 # e
 
+# 첫번째 방법
 # str = input()
 # for char in str:
 #     print(char)
 
+
+# 다른 사람 방법
 print('\n'.join(input()))
