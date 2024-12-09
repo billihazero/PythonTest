@@ -33,10 +33,39 @@
 #     index -= 1
 #     if index == 0:
 #         print("커피 끝")
+# customer = "아이언맨"
+# person = "Unknown"
 
-customer = "아이언맨"
-person = "Unknown"
+# while person != customer:
+#     print("{0}, 커피가 준비되었습니다.".format(customer))
+#     person = input("이름 무엇?")
 
-while person != customer:
-    print("{0}, 커피가 준비되었습니다.".format(customer))
-    person = input("이름 무엇?")
+# 출석번호 1, 2, 3, 4, 앞에 100 더하기 -> 101, 102, 103, 104
+
+
+# students = [1, 2, 3, 4]
+# students = [i+100 for i in students]
+# print(students)
+
+# 학생 이름을 길이로 변환
+# students = ["iron man", "thor", "i am groot"]
+# students = [len(i) for i in students]
+# print(students)
+
+# 학생 이름을 대문자로 변환
+# students =  ["iron man", "thor", "i am groot"]
+# students = [i.upper() for i in students]
+# print(students)
+
+from random import *
+
+cnt = 0
+for i in range(1, 51):
+    run_time = randrange(5, 51) #소요시간 
+    if 5 <= run_time <= 15 :
+        match_result = "[O]"
+        cnt+=1
+    else :
+        match_result = "[ ]"
+    print("{0} {1}번째 손님 (소요시간: {2}분)".format(match_result, i, run_time))
+print("총 탑승 승객: {0}분".format(cnt))
